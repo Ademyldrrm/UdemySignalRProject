@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SignalR.BusinessLayer.Abstract;
 using SignalR.DtoLayer.CategoryDto;
+using SignalR.DtoLayer.ContactDto;
 using SignalR.EntityLayer.DAL.Entities;
 
 namespace SignalR.Api.Controllers
@@ -22,9 +23,9 @@ namespace SignalR.Api.Controllers
         [HttpGet]
         public IActionResult GetCategorylist() 
         {
-            var values = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
-            return Ok(values);
-        }
+			var values = _mapper.Map<List<ResultCategoryDto>>(_categoryService.TGetListAll());
+			return Ok(values);
+		}
         [HttpPost]
         public IActionResult CreateCategory(CreateCategoryDto createCategoryDto)
         {
@@ -35,7 +36,7 @@ namespace SignalR.Api.Controllers
             });
             return Ok("Kategori başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteCategory(int id)
         {
             var values=_categoryService.TGetById(id);
@@ -53,11 +54,12 @@ namespace SignalR.Api.Controllers
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetCategory")]
+        [HttpGet("{id}")]
         public IActionResult GetCategory(int id)
         {
             var value=_categoryService.TGetById(id);
             return Ok(value);
         }
+       
     }
 }
