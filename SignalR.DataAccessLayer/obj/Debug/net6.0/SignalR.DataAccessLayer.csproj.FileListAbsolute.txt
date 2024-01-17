@@ -15,3 +15,4 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.DataAccessLayer\o
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.DataAccessLayer\obj\Debug\net6.0\SignalR.DataAccessLayer.pdb
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.DataAccessLayer\obj\Debug\net6.0\SignalR.DataAccessLayer.genruntimeconfig.cache
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.DataAccessLayer\obj\Debug\net6.0\ref\SignalR.DataAccessLayer.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.DataAccessLayer\obj\Debug\net6.0\SignalR.DataAccessLayer.sourcelink.json

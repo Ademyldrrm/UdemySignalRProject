@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oto0QTn2vdd2/wOIGoiwB7+qgUn19vQrwVpmCyTX5IFz78SVqhrNAtdfBK/xbm5eUmgJfJxl7KWMNE13wtVaDw==",
+  "dgSpecHash": "5L5rWtfalcVdV8UcppRHeGoJmHIWsAPG4oPeHYB6D3JsgHwLzWyz54clA5qNyTgSOtUrSHq6zinxCN5X/37zNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\AdemYildirim\\source\\repos\\UdemySignalRProject\\SignalR.Api\\SignalR.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
-    "C:\\Users\\AdemYildirim\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\AdemYildirim\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
     "C:\\Users\\AdemYildirim\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.26\\microsoft.entityframeworkcore.6.0.26.nupkg.sha512",

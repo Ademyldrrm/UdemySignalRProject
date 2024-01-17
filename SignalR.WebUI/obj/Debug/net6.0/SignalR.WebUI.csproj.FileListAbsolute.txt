@@ -78,3 +78,10 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\obj\Debug\n
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\obj\Debug\net6.0\SignalR.WebUI.pdb
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\obj\Debug\net6.0\SignalR.WebUI.genruntimeconfig.cache
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\obj\Debug\net6.0\ref\SignalR.WebUI.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\SignalR.BusinessLayer.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\SignalR.DtoLayer.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\SignalR.BusinessLayer.pdb
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\SignalR.DtoLayer.pdb
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\obj\Debug\net6.0\SignalR.WebUI.sourcelink.json
