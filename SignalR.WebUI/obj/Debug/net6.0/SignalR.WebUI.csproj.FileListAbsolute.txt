@@ -267,3 +267,4 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\n
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\libman.json
