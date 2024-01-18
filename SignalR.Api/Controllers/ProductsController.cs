@@ -53,10 +53,11 @@ namespace SignalR.Api.Controllers
                Price = createProductDto.Price,
                ProductName = createProductDto.ProductName,
                ProductStatus = createProductDto.ProductStatus,
+               CategoryID = createProductDto.CategoryID,
             });
             return Ok("Ürün başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteProduct(int id)
         {
             var values = _productService.TGetById(id);
@@ -73,11 +74,12 @@ namespace SignalR.Api.Controllers
                 Price = updateProductDto.Price,
                 ProductName = updateProductDto.ProductName,
                 ProductStatus = updateProductDto.ProductStatus,
-                ProductID=updateProductDto.ProductID
+                ProductID=updateProductDto.ProductID,
+                CategoryID=updateProductDto.CategoryID,
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetProduct")]
+        [HttpGet("{id}")]
         public IActionResult GetProduct(int id)
         {
             var value = _productService.TGetById(id);
