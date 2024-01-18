@@ -31,13 +31,13 @@ namespace SignalR.Api.Controllers
         {
             _mediaService.TAdd(new SocialMedia()
             {
-               Icon=createSocialMediaDto.Icon,
-               Title=createSocialMediaDto.Title,
-               Url=createSocialMediaDto.Url,
+                Icon = createSocialMediaDto.Icon,
+                Title = createSocialMediaDto.Title,
+                Url = createSocialMediaDto.Url,
             });
             return Ok("Sosyal medya başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteSocialMedia(int id)
         {
             var values = _mediaService.TGetById(id);
@@ -52,11 +52,11 @@ namespace SignalR.Api.Controllers
                 Icon = updateSocialMediaDto.Icon,
                 Title = updateSocialMediaDto.Title,
                 Url = updateSocialMediaDto.Url,
-                SocialMediaID=updateSocialMediaDto.SocialMediaID,   
+                SocialMediaID = updateSocialMediaDto.SocialMediaID,
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetSocialMedia")]
+        [HttpGet("{id}")]
         public IActionResult GetSocialMedia(int id)
         {
             var value = _mediaService.TGetById(id);

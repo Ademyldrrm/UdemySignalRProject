@@ -39,7 +39,7 @@ namespace SignalR.Api.Controllers
             });
             return Ok("Ekleme Başarılı bir şekilde gerçekleşti");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteBooking(int id)
         {
             var values=_bookingsService.TGetById(id);
@@ -61,7 +61,7 @@ namespace SignalR.Api.Controllers
             return Ok("Güncelleme işlemi Gerçekleşti");
 
         }
-        [HttpGet("Getbooking")]
+        [HttpGet("{id}")]
         public IActionResult GetBooking(int id)
         {
             var value = _bookingsService.TGetById(id);

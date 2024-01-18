@@ -43,7 +43,7 @@ namespace SignalR.Api.Controllers
             return Ok("Silme işlemi Başarılı bir şekilde gerçekleşti");
         }
         [HttpPut]
-        public IActionResult UpdateAb0out(UpdateAboutDto updateAboutDto)
+        public IActionResult UpdateAbout(UpdateAboutDto updateAboutDto)
         {
             About about = new About()
             {
@@ -56,7 +56,7 @@ namespace SignalR.Api.Controllers
             _aboutService.TUpdate(about);
             return Ok("Hakkımda alanı Güncellendi");
         }
-        [HttpGet("GetAbout")]
+        [HttpGet("{id}")]
         public IActionResult GetAbout(int id)
         {
             var value=_aboutService.TGetById(id);

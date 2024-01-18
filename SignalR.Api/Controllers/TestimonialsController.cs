@@ -39,7 +39,7 @@ namespace SignalR.Api.Controllers
             });
             return Ok("Referans başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteTestimonial(int id)
         {
             var values = _testimonialService.TGetById(id);
@@ -60,7 +60,7 @@ namespace SignalR.Api.Controllers
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetTestimonial")]
+        [HttpGet("{id}")]
         public IActionResult GetTestimonial(int id)
         {
             var value = _testimonialService.TGetById(id);

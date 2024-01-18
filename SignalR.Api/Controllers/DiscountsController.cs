@@ -31,14 +31,14 @@ namespace SignalR.Api.Controllers
         {
             _discountService.TAdd(new Discount()
             {
-               Amount = createDiscountDto.Amount,
-               Description = createDiscountDto.Description,
-               ImageUrl= createDiscountDto.ImageUrl,    
-               Title = createDiscountDto.Title,
+                Amount = createDiscountDto.Amount,
+                Description = createDiscountDto.Description,
+                ImageUrl = createDiscountDto.ImageUrl,
+                Title = createDiscountDto.Title,
             });
             return Ok("İndirim başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteDiscount(int id)
         {
             var values = _discountService.TGetById(id);
@@ -54,12 +54,12 @@ namespace SignalR.Api.Controllers
                 Description = updateDiscountDto.Description,
                 ImageUrl = updateDiscountDto.ImageUrl,
                 Title = updateDiscountDto.Title,
-                DiscountID=updateDiscountDto.DiscountID,
+                DiscountID = updateDiscountDto.DiscountID,
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetDiscount")]
-        public IActionResult GetDiscount(int id)
+		[HttpGet("{id}")]
+		public IActionResult GetDiscount(int id)
         {
             var value = _discountService.TGetById(id);
             return Ok(value);

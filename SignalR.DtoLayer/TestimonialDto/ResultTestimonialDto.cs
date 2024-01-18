@@ -8,7 +8,7 @@ namespace SignalR.DtoLayer.TestimonialDto
 {
     public class ResultTestimonialDto
     {
-            
+        public int TestimonialID { get; set; }
         public string TestimonialName { get; set; }
         public string Title { get; set; }
         public string Comment { get; set; }

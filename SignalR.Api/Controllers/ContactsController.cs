@@ -33,12 +33,12 @@ namespace SignalR.Api.Controllers
             {
                 FooterDescription = createContactDto.FooterDescription,
                 Location = createContactDto.Location,
-                Mail=createContactDto.Mail, 
+                Mail = createContactDto.Mail,
                 Phone = createContactDto.Phone
             });
             return Ok("iletişim başarılı bir şekilde eklendi");
         }
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public IActionResult DeleteContact(int id)
         {
             var values = _contactService.TGetById(id);
@@ -54,11 +54,11 @@ namespace SignalR.Api.Controllers
                 Location = updateContactDto.Location,
                 Mail = updateContactDto.Mail,
                 Phone = updateContactDto.Phone,
-                ContactID=updateContactDto.ContactID
+                ContactID = updateContactDto.ContactID
             });
             return Ok("Güncelleme işlemi Gerçekleşti");
         }
-        [HttpGet("GetContact")]
+        [HttpGet("{id}")]
         public IActionResult GetContact(int id)
         {
             var value = _contactService.TGetById(id);
