@@ -38,6 +38,26 @@ namespace SignalR.BusinessLayer.Concrete
 			throw new NotImplementedException();
 		}
 
+		public decimal TLastOrderPrice()
+		{
+			return _orderDal.LastOrderPrice();
+		}
+
+		public int TTotalOrderActiveCount()
+		{
+			return _orderDal.TotalOrderActiveCount();
+		}
+
+		public int TTotalOrderCount()
+		{
+			return _orderDal.TotalOrderCount();
+		}
+
+		public int TTotalOrderPasiveCount()
+		{
+			return _orderDal.TotalOrderPasiveCount();
+		}
+
 		public void TUpdate(Order entity)
 		{
 			throw new NotImplementedException();
