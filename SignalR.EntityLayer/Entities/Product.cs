@@ -1,4 +1,6 @@
-﻿namespace SignalR.EntityLayer.DAL.Entities
+﻿using SignalR.EntityLayer.Entities;
+
+namespace SignalR.EntityLayer.DAL.Entities
 {
     public class Product
     {
@@ -9,6 +11,8 @@
         public string ImageUrl { get; set; }
         public bool ProductStatus { get; set; }
         public int CategoryID { get; set; }
+
         public Category Category { get; set; }
-    }
+		public List<OrderDetail> OrderDetails { get; set; }
+	}
 }
