@@ -1,32 +1,40 @@
-﻿<footer class="footer_section">
+﻿@model List<ResultContactDto>
+
+<footer class="footer_section">
     <div class="container">
         <div class="row">
             <div class="col-md-4 footer-col">
                 <div class="footer_contact">
+                    @foreach (var item in Model)
+                    {
+                        
+                   
                     <h4>
-                        Contact Us
+                       @item.FooterDescription
                     </h4>
                     <div class="contact_link_box">
                         <a href="">
                             <i class="fa fa-map-marker" aria-hidden="true"></i>
                             <span>
-                                Location
+                                @item.Location
                             </span>
                         </a>
                         <a href="">
                             <i class="fa fa-phone" aria-hidden="true"></i>
                             <span>
-                                Call +01 1234567890
+                               @item.Phone
                             </span>
                         </a>
                         <a href="">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                             <span>
-                                demo@gmail.com
+                                @item.Mail
                             </span>
                         </a>
                     </div>
+                    }
                 </div>
+                   
             </div>
             <div class="col-md-4 footer-col">
                 <div class="footer_detail">
