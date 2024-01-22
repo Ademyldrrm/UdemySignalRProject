@@ -11,13 +11,15 @@ namespace SignalR.Api.Hubs
 		private readonly IOrderService _orderService;
         private readonly IMoneyCasesService _moneyCasesService;
         private readonly IMenuTableService _menuTableService;
-        public SignalRHub(ICategoryService categoryService, IProductService productService, IOrderService orderService, IMoneyCasesService moneyCasesService, IMenuTableService menuTableService)
+        private readonly IBookingService _bookingService;
+        public SignalRHub(ICategoryService categoryService, IProductService productService, IOrderService orderService, IMoneyCasesService moneyCasesService, IMenuTableService menuTableService, IBookingService bookingService)
         {
             _categoryService = categoryService;
             _productService = productService;
             _orderService = orderService;
             _moneyCasesService = moneyCasesService;
             _menuTableService = menuTableService;
+            _bookingService = bookingService;
         }
 
         public async Task SendStatistic()
@@ -72,5 +74,10 @@ namespace SignalR.Api.Hubs
 			var value = _moneyCasesService.TTotalMoneyCasesAmount();
 			await Clients.All.SendAsync("ReceiverTotalMoneyCasesAmount", value.ToString("0.00") + "₺");
 		}
+        public async Task GetBookingList()
+        {
+            var values = _bookingService.TGetListAll();
+            await Clients.All.SendAsync("ReceiverBookingList", values);
+        }
 	}
 }
