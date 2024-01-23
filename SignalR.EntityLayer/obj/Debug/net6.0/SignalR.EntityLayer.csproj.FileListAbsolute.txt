@@ -10,3 +10,4 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.EntityLayer\obj\D
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.pdb
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\ref\SignalR.EntityLayer.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.sourcelink.json
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.EntityLayer\obj\Debug\net6.0\SignalR.EntityLayer.csproj.AssemblyReference.cache

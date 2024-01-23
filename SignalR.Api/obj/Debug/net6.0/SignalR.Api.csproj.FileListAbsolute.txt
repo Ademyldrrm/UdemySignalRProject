@@ -77,3 +77,8 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\obj\Debug\net6.0\SignalR.Api.sourcelink.json
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\SignalR.BusinessLayer.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\SignalR.BusinessLayer.pdb
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.Api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
