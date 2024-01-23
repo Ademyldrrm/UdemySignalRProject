@@ -74,5 +74,17 @@ namespace SignalR.Api.Controllers
 			_notificationService.TUpdate(notification);
 			return Ok("Güncelleme işlemi başarıyla yapıldı");
 		}
-	}
+		[HttpGet("NotificationChangeToFalse/{id}")]
+		public IActionResult NotificationChangeToFalse(int id)
+		{
+			_notificationService.TNotificationChangeToFalse(id);
+			return Ok("Güncelleme Yapıldı");
+		}
+        [HttpGet("NotificationChangeToTrue/{id}")]
+        public IActionResult NotificationChangeToTrue(int id)
+		{
+			_notificationService.TNotificationChangeToTrue(id);
+			return Ok("Güncelleme Yapıldı");
+		}
+    }
 }
