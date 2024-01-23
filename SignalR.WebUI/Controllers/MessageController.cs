@@ -8,5 +8,9 @@ namespace SignalR.WebUI.Controllers
         {
             return View();
         }
+        public IActionResult ClientCountUser()
+        {
+            return View();
+        }
     }
 }

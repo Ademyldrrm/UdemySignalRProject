@@ -24,8 +24,8 @@ namespace SignalR.Api.Hubs
 			_bookingService = bookingService;
 			_notificationService = notificationService;
 		}
-
-		public async Task SendStatistic()
+		public static int clientCount { get; set; } = 0;
+        public async Task SendStatistic()
 		{
 			var value = _categoryService.TCategoryCount();
 			await Clients.All.SendAsync("ReceiverCategoryCount", value);
@@ -101,6 +101,18 @@ namespace SignalR.Api.Hubs
 		{
 			await Clients.All.SendAsync("ReceiverMessage", user, message);
 		}
-		
-	}
+        public override async Task OnConnectedAsync()
+        {
+           clientCount++;
+			await Clients.All.SendAsync("ReceiverClientCount", clientCount);
+			await base.OnConnectedAsync();
+        }
+        public override async Task OnDisconnectedAsync(Exception? exception)
+        {
+			clientCount--;
+			await Clients.All.SendAsync("ReceiverClientCount",clientCount);
+			await base.OnDisconnectedAsync(exception);
+        }
+
+    }
 }
