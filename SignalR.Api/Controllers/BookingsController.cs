@@ -35,6 +35,7 @@ namespace SignalR.Api.Controllers
                 Name = createBookingDto.Name,
                 PersonCount = createBookingDto.PersonCount,
                 Phone = createBookingDto.Phone,
+                Description = createBookingDto.Description,
                 
             });
             return Ok("Ekleme Başarılı bir şekilde gerçekleşti");
@@ -68,5 +69,19 @@ namespace SignalR.Api.Controllers
             return Ok(value);
                
         }
-    }
+		[HttpGet("BookingStatusApproved/{id}")]
+		public IActionResult BookingStatusApproved(int id)
+		{
+        _bookingsService.TBookingStatusApproved(id);
+			return Ok("Rezervasyon Açıklaması Değiştirildi");
+
+		}
+		[HttpGet("BookingStatusCanceled/{id}")]
+		public IActionResult BookingStatusCanceled(int id)
+		{
+			_bookingsService.TBookingStatusCancelled(id);
+			return Ok("Rezervasyon Açıklaması Değiştirildi");
+
+		}
+	}
 }
