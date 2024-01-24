@@ -9,5 +9,8 @@ namespace SignalR.DataAccessLayer.Abstract
 {
     public interface IDiscountDal:IGenericDal<Discount>
     {
+        void ChanfeStatusToTrue(int id);
+        void ChanfeStatusToFalse(int id);
+        List<Discount> GetListByStatusTrue();
     }
 }
