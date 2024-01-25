@@ -275,3 +275,7 @@ C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\n
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\QRCoder.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\MailKit.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\MimeKit.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\NETCore.MailKit.dll
+C:\Users\AdemYildirim\source\repos\UdemySignalRProject\SignalR.WebUI\bin\Debug\net6.0\BouncyCastle.Crypto.dll
